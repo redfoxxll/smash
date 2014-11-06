@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class Swith2 : MonoBehaviour {
-
-	// Use this for initialization
 	void Start () {
 	
 	}
@@ -15,7 +13,6 @@ public class Swith2 : MonoBehaviour {
 		else if(transform.tag == "rightswitch")
 		transform.parent.GetComponent<Animator> ().SetBool ("RightSwithOnToOff",true);
 	}
-	// Update is called once per frame
 	void Update () {
 	
 	}

@@ -4,7 +4,6 @@ using System.Collections;
 public class diamond_change : MonoBehaviour {
 	public Transform aftercollison;
 	public Transform number;
-	// Use this for initialization
 	void Start () {
 	
 	}
@@ -25,7 +24,6 @@ public class diamond_change : MonoBehaviour {
 		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);
 		Instantiate (number,transform.position+new Vector3(0,1.5f,-1.5f),number.rotation);
 	}
-	// Update is called once per frame
 	void Update () {
 	
 	}

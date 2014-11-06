@@ -39,11 +39,6 @@ public class TouchControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	 if (Input.GetMouseButtonDown (0)) {
-
-//			Transform shootingball = (Transform)Instantiate(oneball,Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,2.0f)),oneball.rotation);
-//			Transform shootingball = (Transform)Instantiate(twoball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,0.0f)),twoball.rotation);
-//			Transform shootingball = (Transform)Instantiate(fiveball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,0.0f)),twoball.rotation);
-
 			float forcex = (Input.mousePosition.x -  Screen.width/2)/(Screen.width/2);
 			float forcey = (Input.mousePosition.y -  Screen.height/2)/(Screen.height/2);
 
@@ -57,7 +52,6 @@ public class TouchControl : MonoBehaviour {
 				}
 				break;
 			case 2:
-				//Two ball shooting
 				shootingball = (Transform)Instantiate(twoball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),twoball.rotation);
 				int i = 0;
 				foreach(Transform ballchild in shootingball)
@@ -67,7 +61,6 @@ public class TouchControl : MonoBehaviour {
 				}
 				break;
 			case 3:
-			//three ball shooting
 				shootingball = (Transform)Instantiate(threeball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),twoball.rotation);
 
 			foreach(Transform ballchild in shootingball)
@@ -85,7 +78,6 @@ public class TouchControl : MonoBehaviour {
 			}
 				break;
 			case 4:
-			//four ball shooting
 				shootingball = (Transform)Instantiate(fourball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),twoball.rotation);
 			foreach(Transform ballchild in shootingball)
 			{
@@ -105,7 +97,6 @@ public class TouchControl : MonoBehaviour {
 			}
 				break;
 			case 5:
-			//five ball shooting
 				shootingball = (Transform)Instantiate(fiveball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),twoball.rotation);
 			foreach(Transform ballchild in shootingball)
 			{
@@ -134,12 +125,6 @@ public class TouchControl : MonoBehaviour {
 				//TODO:game over
 				Debug.Log("game over");
 			}
-
-//			shootingball.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce,forwardforce),ForceMode.Acceleration);
-//			shootingball.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,2.0f));
-//			Debug.Log(Screen.height);
-//			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-//			Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
 		}
 	}
 }

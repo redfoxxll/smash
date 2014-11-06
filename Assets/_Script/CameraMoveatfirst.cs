@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraMove : MonoBehaviour {
+public class CameraMoveatfirst : MonoBehaviour {
 	public float cameraspeed;
 	void Start () {
-
+//		transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
 	}
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) 
-			transform.GetComponent<Animator>().SetTrigger("cameraenterscene");
+	//	if (Input.GetMouseButtonDown (0)) 
+	//		transform.GetComponent<Animator>().SetTrigger("cameraenterscene");
 	}
-	public void SetMove(){
-		transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
-	}
+	//public void SetMove(){
+	//	transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
+	//}
 	void OnTriggerEnter(Collider other)
 	{
 		//logic for the ball count
