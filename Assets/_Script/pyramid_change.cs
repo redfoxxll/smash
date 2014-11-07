@@ -12,9 +12,9 @@ public class pyramid_change : MonoBehaviour {
 		//logic for the ball count
 		TouchControl.ballnumber += 5;
 		TouchControl.ballmodecounter++;
-		if (TouchControl.ballmodecounter >= 3) 
+		if (TouchControl.ballmodecounter >= 10) 
 		{
-			TouchControl.shootingballmode++;	
+//			TouchControl.shootingballmode++;	
 			TouchControl.ballmodecounter = 0;
 		}
 		//TODO:update UI counter

@@ -12,7 +12,7 @@ public class diamond_change : MonoBehaviour {
 		//logic for the ball count
 		TouchControl.ballnumber += 5;
 		TouchControl.ballmodecounter++;
-		if (TouchControl.ballmodecounter >= 3) 
+		if (TouchControl.ballmodecounter >= 10) 
 		{
 			TouchControl.shootingballmode++;	
 			TouchControl.ballmodecounter = 0;

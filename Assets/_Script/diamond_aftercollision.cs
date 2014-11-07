@@ -16,6 +16,6 @@ public class diamond_aftercollision : MonoBehaviour {
 	void OnCollisionEnter(Collision collision)
 	{
 		transform.rigidbody.useGravity = true;
-		rigidbody.AddForce (new Vector3(0,0,5),ForceMode.VelocityChange);
+		rigidbody.AddForce (new Vector3(0,0,2),ForceMode.VelocityChange);
 	}
 }
