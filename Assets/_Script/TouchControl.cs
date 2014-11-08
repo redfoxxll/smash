@@ -14,6 +14,7 @@ public class TouchControl : MonoBehaviour {
 	public static int shootingballmode;
 	public static int ballnumber;
 	public static int ballmodecounter;
+//	public static int distance;
 
 	public float horizonforce;
 	public float verticalforce;
@@ -29,8 +30,9 @@ public class TouchControl : MonoBehaviour {
 	void Start () {
 		stagecreate = new Queue<Transform> ();
 		shootingballmode = 1;
-		ballnumber = 10;
+		ballnumber = 1000;
 		ballmodecounter = 0;
+//		distance = 0;
 	}
 	public void detector()
 	{
@@ -38,7 +40,7 @@ public class TouchControl : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-	 if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)) {
 			float forcex = (Input.mousePosition.x -  Screen.width/2)/(Screen.width/2);
 			float forcey = (Input.mousePosition.y -  Screen.height/2)/(Screen.height/2);
 

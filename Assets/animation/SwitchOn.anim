@@ -20,17 +20,17 @@ AnimationClip:
         value: {x: 0, y: -9, z: 3.89999986}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
+        tangentMode: -80184
       - time: .0166666675
         value: {x: 0, y: -9, z: 3.89999986}
         inSlope: {x: 3.43333459, y: 0, z: -4.19287881e-06}
         outSlope: {x: 3.43333459, y: 0, z: -4.19287881e-06}
-        tangentMode: 0
+        tangentMode: 43
       - time: .5
         value: {x: 3.31889009, y: -9, z: 3.8999958}
         inSlope: {x: 6.86666918, y: 0, z: -8.38575761e-06}
         outSlope: {x: 6.86666918, y: 0, z: -8.38575761e-06}
-        tangentMode: 566025432
+        tangentMode: 15
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Door_left
@@ -41,22 +41,41 @@ AnimationClip:
         value: {x: 0, y: -9, z: 3.89999986}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 64
+        tangentMode: 72
       - time: .0166666675
         value: {x: 0, y: -9, z: 3.89999986}
         inSlope: {x: -3.31218266, y: 0, z: 4.19287881e-06}
         outSlope: {x: -3.31218266, y: 0, z: 4.19287881e-06}
-        tangentMode: 565903396
+        tangentMode: 151429100
       - time: .5
         value: {x: -3.2017765, y: -9, z: 3.90000391}
         inSlope: {x: -6.62436533, y: 0, z: 8.38575761e-06}
         outSlope: {x: -6.62436533, y: 0, z: 8.38575761e-06}
-        tangentMode: 0
+        tangentMode: 150192556
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Door_right
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: Gate_circle
+    classID: 135
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -84,6 +103,12 @@ AnimationClip:
       attribute: 1
       script: {fileID: 0}
       classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 796767052
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 135
       customType: 0
       isPPtrCurve: 0
     - path: 0
@@ -256,6 +281,25 @@ AnimationClip:
     attribute: m_LocalPosition.z
     path: Door_right
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .5
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: Gate_circle
+    classID: 135
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events: []

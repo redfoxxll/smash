@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class CameraMoveatfirst : MonoBehaviour {
-	public float cameraspeed;
+//	public float cameraspeed;
+	public Transform crashball;
 	void Start () {
 //		transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
 	}
@@ -26,5 +27,10 @@ public class CameraMoveatfirst : MonoBehaviour {
 			Debug.Log("game over");		
 		}
 		transform.parent.gameObject.GetComponent<Animator> ().SetTrigger ("shake");
+		Transform crashballtmp = (Transform)Instantiate (crashball,transform.position,transform.rotation);
+		foreach (Transform ballchild in crashballtmp) 
+		{
+			ballchild.rigidbody.AddForce(new Vector3(0,0,60),ForceMode.VelocityChange);		
+		}
 	}
 }
