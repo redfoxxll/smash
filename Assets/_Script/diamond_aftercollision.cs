@@ -5,7 +5,14 @@ public class diamond_aftercollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("Destroy",5.0f,0.5f);
+//		InvokeRepeating ("Destroy",2.0f,0.5f);
+		InvokeRepeating ("DestroyDetect",2.0f,0.5f);
+
+	}
+	void DestroyDetect()
+	{
+		if(transform.position.z < Camera.main.transform.position.z)
+			GameObject.Destroy (transform.gameObject);
 	}
 	void Destroy()
 	{
