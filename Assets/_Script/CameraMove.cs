@@ -19,6 +19,7 @@ public class CameraMove : MonoBehaviour {
 		TouchControl.ballnumber -= 10;
 		TouchControl.ballmodecounter = 0;
 		TouchControl.shootingballmode = 1;
+		GameObject.Find ("BallCalc").GetComponent<BallCalc>().BallCalcChange(0);
 		if (TouchControl.ballnumber <= 0) 
 		{
 			//TODO:UI counter set to 0 game over

@@ -14,6 +14,7 @@ public class diamond_change : MonoBehaviour {
 			//TODO:UI change
 			TouchControl.shootingballmode = 1;
 			TouchControl.ballmodecounter = 0;
+			GameObject.Find ("BallCalc").GetComponent<BallCalc>().BallCalcChange(0);
 			GameObject.Destroy(transform.parent.gameObject);
 		}
 	}
@@ -22,15 +23,18 @@ public class diamond_change : MonoBehaviour {
 	{
 		//logic for the ball count
 		TouchControl.ballnumber += 5;
-		if (TouchControl.shootingballmode < 5) 
-		{
-			TouchControl.ballmodecounter++;
-			if (TouchControl.ballmodecounter == 10) 
-			{
-				++TouchControl.shootingballmode;
-				TouchControl.ballmodecounter = 0;
-			}
-		}
+		if (TouchControl.shootingballmode < 5) {
+						TouchControl.ballmodecounter++;
+						if (TouchControl.ballmodecounter == 10) {
+								++TouchControl.shootingballmode;
+								TouchControl.ballmodecounter = 0;
+						}
+						int ballindex = (TouchControl.shootingballmode - 1) * 10 + TouchControl.ballmodecounter;
+						GameObject.Find ("BallCalc").GetComponent<BallCalc> ().BallCalcChange (ballindex);
+				} else {
+			GameObject.Find ("BallCalc").GetComponent<BallCalc> ().BallCalcChange (40);
+				}
+
 		//TODO:update UI counter
 
 		Debug.Log ("the total ball num is"+TouchControl.ballnumber);
