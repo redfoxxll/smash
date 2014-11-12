@@ -21,7 +21,7 @@ public class diamond_aftercollision : MonoBehaviour {
 //		if (collision.transform.gameObject.layer == 8) 
 		{
 						transform.rigidbody.useGravity = true;
-//						rigidbody.AddForce (new Vector3 (0, 0, 2), ForceMode.VelocityChange);
+						rigidbody.AddForce (new Vector3 (0, 0, 1), ForceMode.VelocityChange);
 		}
 	}
 }
