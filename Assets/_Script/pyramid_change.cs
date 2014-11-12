@@ -4,6 +4,7 @@ using System.Collections;
 public class pyramid_change : MonoBehaviour {
 	public Transform aftercollison;
 	public Transform number;
+	static public bool checkit = false;
 	void Start () {
 		InvokeRepeating ("checkpos",0.5f,0.5f);
 	}
@@ -32,7 +33,7 @@ public class pyramid_change : MonoBehaviour {
 			}
 		}
 		//TODO:update UI counter
-		
+		checkit = true;
 		Debug.Log ("the total ball num is"+TouchControl.ballnumber);
 		GameObject.Destroy(transform.parent.gameObject);
 		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);

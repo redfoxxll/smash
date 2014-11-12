@@ -131,6 +131,17 @@ public class TouchControl : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		GUI.Label(new Rect(Screen.width/2,Screen.height/2,2,2), TouchControl.ballnumber.ToString());
+		GUI.color = Color.black;
+		GUI.skin.label.fontSize = 30;
+//		GUI.Label(new Rect(Screen.width/2,Screen.height/2,100,100), TouchControl.ballnumber.ToString());
+		if (pyramid_change.checkit) {
+			GUI.Label(new Rect(Screen.width/2,Screen.height/2,100,100), "+3");
+			InvokeRepeating ("numberdisappear",2.0f,2.0f);
+		}
+	}
+	void numberdisappear()
+	{
+		CancelInvoke("numberdisappear");
+		pyramid_change.checkit = false;
 	}
 }
