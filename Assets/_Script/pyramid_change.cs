@@ -4,7 +4,9 @@ using System.Collections;
 public class pyramid_change : MonoBehaviour {
 	public Transform aftercollison;
 	public Transform number;
-	static public bool checkit = false;
+
+	public static bool checkit;
+
 	void Start () {
 		InvokeRepeating ("checkpos",0.5f,0.5f);
 	}
@@ -18,11 +20,12 @@ public class pyramid_change : MonoBehaviour {
 			GameObject.Destroy(transform.parent.gameObject);
 		}
 	}
+	
 	void OnTriggerEnter(Collider other)
 	{
 		//logic for the ball count
+		pyramid_change.checkit = true;
 		TouchControl.ballnumber += 3;
-
 		if (TouchControl.shootingballmode < 5) 
 		{
 			TouchControl.ballmodecounter++;
@@ -40,4 +43,18 @@ public class pyramid_change : MonoBehaviour {
 		Transform tmp = (Transform)Instantiate (number,transform.position+new Vector3(0,0.6f,0),number.rotation);
 		Debug.Log ("the pos of tmp is "+tmp.position);
 	}
+
+	void OnGUI (){
+		GUI.color = Color.black;
+		GUI.skin.label.fontSize = 30;
+		if (pyramid_change.checkit){
+						GUI.Label(new Rect(Screen.width/2+25,0,100,100),"+3");
+						InvokeRepeating("numberdisappear",1.0f,1.0f);
+		}
+	}
+	void numberdisappear(){
+				CancelInvoke ("numberdisappear");
+				pyramid_change.checkit = false;
+		}
+
 }
