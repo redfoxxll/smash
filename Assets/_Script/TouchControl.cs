@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class TouchControl : MonoBehaviour {
+//	public Texture2D Ball;
 	public Transform oneball;
 	public Transform twoball;
 	public Transform threeball;
@@ -46,7 +47,7 @@ public class TouchControl : MonoBehaviour {
 
 			switch(shootingballmode){
 			case 1:
-				shootingball = (Transform)Instantiate(oneball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),twoball.rotation);
+				shootingball = (Transform)Instantiate(oneball,Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2,Screen.height/2,Camera.main.nearClipPlane)),oneball.rotation);
 				Debug.Log ("the ball z is "+shootingball.position+Camera.main.name);
 				foreach(Transform ballchild in shootingball)
 				{
@@ -131,6 +132,10 @@ public class TouchControl : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		GUI.Label(new Rect(Screen.width/2,Screen.height/2,2,2), TouchControl.ballnumber.ToString());
+		GUI.color = Color.black;
+		GUI.skin.label.fontSize = 30;
+		GUI.Label(new Rect(Screen.width/2,0,100,100), TouchControl.ballnumber.ToString());
+//		GUI.Label(new Rect(Screen.width/2,Screen.height/2, Ball.width, Ball.height), Ball);
+//		GUI.Label (new Rect (Screen.width/2+10,0,100,100),"+3");
 	}
 }
