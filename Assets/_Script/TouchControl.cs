@@ -30,7 +30,7 @@ public class TouchControl : MonoBehaviour {
 	void Start () {
 		stagecreate = new Queue<Transform> ();
 		shootingballmode = 1;
-		ballnumber = 1000;
+		ballnumber = 25;
 		ballmodecounter = 0;
 //		distance = 0;
 	}
@@ -128,5 +128,9 @@ public class TouchControl : MonoBehaviour {
 				Debug.Log("game over");
 			}
 		}
+	}
+
+	void OnGUI () {
+		GUI.Label(new Rect(Screen.width/2,Screen.height/2,2,2), TouchControl.ballnumber.ToString());
 	}
 }

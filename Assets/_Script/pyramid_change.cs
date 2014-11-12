@@ -36,7 +36,7 @@ public class pyramid_change : MonoBehaviour {
 		Debug.Log ("the total ball num is"+TouchControl.ballnumber);
 		GameObject.Destroy(transform.parent.gameObject);
 		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);
-		Transform tmp = (Transform)Instantiate (number,transform.position+new Vector3(0,5,-2),number.rotation);
+		Transform tmp = (Transform)Instantiate (number,transform.position+new Vector3(0,0.6f,0),number.rotation);
 		Debug.Log ("the pos of tmp is "+tmp.position);
 	}
 }
