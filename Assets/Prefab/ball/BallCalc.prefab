@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 131: {fileID: 13100000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: BallCalc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a36145028168c4ba1e9030c36e95ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balltexture:
+  - {fileID: 2800000, guid: f4531c09c1aa04532a136d257f12dde8, type: 3}
+  - {fileID: 2800000, guid: 9dac7825a0b6d4e798ed278283418231, type: 3}
+  - {fileID: 2800000, guid: 58a47076df62045eebaf34fe3790ed83, type: 3}
+  - {fileID: 2800000, guid: 09c14b5210f60436b8b146338aa54c93, type: 3}
+  - {fileID: 2800000, guid: 84df08d13300c4dd99a62b47ef1681f3, type: 3}
+  - {fileID: 2800000, guid: d2d1a229652924a049de914d74fcae3d, type: 3}
+  - {fileID: 2800000, guid: 33f5d261f03a248f5a32d45ccf8ffccd, type: 3}
+  - {fileID: 2800000, guid: e0dd795755ddb479d9aacf3e5ac18dab, type: 3}
+  - {fileID: 2800000, guid: 30eb430f592d146c491653387945ed02, type: 3}
+  - {fileID: 2800000, guid: de2fe854885c74ec9842313ad892f43d, type: 3}
+  - {fileID: 2800000, guid: 9ef78cf58e3a04b6f95ec5710aec3cba, type: 3}
+  - {fileID: 2800000, guid: ce272e731217f4fc5b937381ae805596, type: 3}
+  - {fileID: 2800000, guid: 61cce15d522ca4ba98981b4596157573, type: 3}
+  - {fileID: 2800000, guid: e3f016a3e03544c6ab3d68177260a506, type: 3}
+  - {fileID: 2800000, guid: 9d578c2505e2849d78bbde0ba23bb6e8, type: 3}
+  - {fileID: 2800000, guid: bbdcbba696bcf458397a251e0a5c23fd, type: 3}
+  - {fileID: 2800000, guid: b92f841dcb8f0455d802a9bd15d6b79f, type: 3}
+  - {fileID: 2800000, guid: 43f9c3fa974ae4a19b31201b6b2a937f, type: 3}
+  - {fileID: 2800000, guid: e466b493f145a4cdfaa2e4ea4fc068b8, type: 3}
+  - {fileID: 2800000, guid: 8e99606fcea894b9db4f2467160f461f, type: 3}
+  - {fileID: 2800000, guid: 909bfd4c132114cf9a23d57fc8ec3f67, type: 3}
+  - {fileID: 2800000, guid: 790ead7a07b224ec2934c38550a41611, type: 3}
+  - {fileID: 2800000, guid: 159f53c5a23764e8ba7bd962679ef579, type: 3}
+  - {fileID: 2800000, guid: b2d571260552d44fc80fd00938784db6, type: 3}
+  - {fileID: 2800000, guid: 94e25c8257457401dafa203a1d8c1f24, type: 3}
+  - {fileID: 2800000, guid: 01cdcb6b11d2343c4b0456f4490689d2, type: 3}
+  - {fileID: 2800000, guid: 931832ffb3a2945e99dac45f08f8f068, type: 3}
+  - {fileID: 2800000, guid: dc0469350185d4dc38a8016e65c760b3, type: 3}
+  - {fileID: 2800000, guid: 2bea56d510bbb49eb82f8be944cdc110, type: 3}
+  - {fileID: 2800000, guid: 59ba79df033e540b899bacb455726543, type: 3}
+  - {fileID: 2800000, guid: a97d0c1e6726a4ade8870461c2c7a1be, type: 3}
+  - {fileID: 2800000, guid: 30341f01dc176407f8a3b826a70c14de, type: 3}
+  - {fileID: 2800000, guid: 97ea7111b234a435b87f617117ffae65, type: 3}
+  - {fileID: 2800000, guid: 9c6b5f644c1164cb2881a834f6e844a2, type: 3}
+  - {fileID: 2800000, guid: 060e4a08fc67e49c7852000202c86a6f, type: 3}
+  - {fileID: 2800000, guid: 071ac517e16d340389e56c1141ab8bb3, type: 3}
+  - {fileID: 2800000, guid: 215b237f03f32443c9fd44e6802bbf76, type: 3}
+  - {fileID: 2800000, guid: be6d3ab7223a34783a4b5e4839c3302c, type: 3}
+  - {fileID: 2800000, guid: c5b42f1e206c247adbf33240f5bbfdc0, type: 3}
+  - {fileID: 2800000, guid: ce0277cbe25fd4f3d8e5d7500ab47136, type: 3}
+  - {fileID: 2800000, guid: 36214730a9b5341eaba09f5817f39a28, type: 3}
+--- !u!131 &13100000
+GUITexture:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: f4531c09c1aa04532a136d257f12dde8, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -26.6000004
+    y: 124.900002
+    width: 58
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

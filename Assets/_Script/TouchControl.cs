@@ -22,8 +22,10 @@ public class TouchControl : MonoBehaviour {
 	public float forwardforce;
 
 	//stage prefab
-	public Transform map1;
-	public Transform map2;
+//	public Transform map1;
+//	public Transform map2;
+
+	public GUISkin mySkin;
 
 	private Queue<Transform> stagecreate;
 	private Transform shootingball;
@@ -59,7 +61,7 @@ public class TouchControl : MonoBehaviour {
 				int i = 0;
 				foreach(Transform ballchild in shootingball)
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+(200.0f*i),forcey*verticalforce,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+(20.0f*i),forcey*verticalforce,forwardforce),ForceMode.Acceleration);
 					i++;
 				}
 				break;
@@ -70,13 +72,13 @@ public class TouchControl : MonoBehaviour {
 			{
 				if(ballchild.tag=="topball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce+50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce+5.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="leftball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-100.0f,forcey*verticalforce-150.0f,forwardforce),ForceMode.Acceleration);	
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-10.0f,forcey*verticalforce-15.0f,forwardforce),ForceMode.Acceleration);	
 				}else if(ballchild.tag=="rightball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+100.0f,forcey*verticalforce-150.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+10.0f,forcey*verticalforce-15.0f,forwardforce),ForceMode.Acceleration);
 				}
 			}
 				break;
@@ -86,16 +88,16 @@ public class TouchControl : MonoBehaviour {
 			{
 				if(ballchild.tag=="topball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce+50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce+5.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="downball")
 				{  
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce-150.0f,forwardforce),ForceMode.Acceleration);	
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce-15.0f,forwardforce),ForceMode.Acceleration);	
 				}else if(ballchild.tag=="rightball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+100.0f,forcey*verticalforce-50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+10.0f,forcey*verticalforce-5.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="leftball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-100.0f,forcey*verticalforce-50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-10.0f,forcey*verticalforce-5.0f,forwardforce),ForceMode.Acceleration);
 				}
 			}
 				break;
@@ -105,19 +107,19 @@ public class TouchControl : MonoBehaviour {
 			{
 				if(ballchild.tag=="topleftball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-100.0f,forcey*verticalforce+50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-10.0f,forcey*verticalforce+5.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="toprightball")
 				{  
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+100.0f,forcey*verticalforce+50.0f,forwardforce),ForceMode.Acceleration);	
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+10.0f,forcey*verticalforce+5.0f,forwardforce),ForceMode.Acceleration);	
 				}else if(ballchild.tag=="middleball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce-50.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce,forcey*verticalforce-5.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="downleftball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-100.0f,forcey*verticalforce-150.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce-10.0f,forcey*verticalforce-15.0f,forwardforce),ForceMode.Acceleration);
 				}else if(ballchild.tag=="downrightball")
 				{
-					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+100.0f,forcey*verticalforce-150.0f,forwardforce),ForceMode.Acceleration);
+					ballchild.rigidbody.AddForce(new Vector3(forcex*horizonforce+10.0f,forcey*verticalforce-15.0f,forwardforce),ForceMode.Acceleration);
 				}
 			}
 				break;
@@ -132,8 +134,8 @@ public class TouchControl : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		GUI.color = Color.black;
-		GUI.skin.label.fontSize = 30;
-		GUI.Label(new Rect(Screen.width/2,0,100,100), TouchControl.ballnumber.ToString());
+		if(mySkin) 
+			GUI.skin = mySkin;
+		GUI.Label(new Rect(Screen.width/2+45,30,200,200), TouchControl.ballnumber.ToString());
 	}
 }
