@@ -4,7 +4,9 @@ using System.Collections;
 public class CameraMoveatfirst : MonoBehaviour {
 //	public float cameraspeed;
 	public Transform crashball;
+	private bool movable;
 	void Start () {
+		movable = true;
 //		transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
 	}
 	void Update () {
@@ -16,7 +18,10 @@ public class CameraMoveatfirst : MonoBehaviour {
 	//}
 	void OnTriggerEnter(Collider other)
 	{
+		if (!movable)
+					return;
 		//logic for the ball count
+		movable = false;
 		TouchControl.ballnumber -= 10;
 		TouchControl.ballmodecounter = 0;
 		TouchControl.shootingballmode = 1;
@@ -31,7 +36,12 @@ public class CameraMoveatfirst : MonoBehaviour {
 		Transform crashballtmp = (Transform)Instantiate (crashball,transform.position,transform.rotation);
 		foreach (Transform ballchild in crashballtmp) 
 		{
-			ballchild.rigidbody.AddForce(new Vector3(0,0,60),ForceMode.VelocityChange);		
+			ballchild.rigidbody.AddForce(new Vector3(0,0,10),ForceMode.VelocityChange);		
 		}
+		Invoke ("SetMovable", 2.0f);
+	}
+	void SetMovable()
+	{
+		movable = true;
 	}
 }
