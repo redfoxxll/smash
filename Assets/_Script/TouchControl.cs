@@ -33,7 +33,7 @@ public class TouchControl : MonoBehaviour {
 	void Start () {
 		stagecreate = new Queue<Transform> ();
 		shootingballmode = 1;
-		ballnumber = 25;
+		ballnumber = 100;
 		ballmodecounter = 0;
 //		distance = 0;
 	}
@@ -136,6 +136,8 @@ public class TouchControl : MonoBehaviour {
 	void OnGUI () {
 		if(mySkin) 
 			GUI.skin = mySkin;
-		GUI.Label(new Rect(Screen.width/2+45,30,200,200), TouchControl.ballnumber.ToString());
+		GUI.color = Color.black;
+		GUI.skin.label.fontSize = 30;
+		GUI.Label(new Rect(Screen.width/2+45,50,100,100), TouchControl.ballnumber.ToString());
 	}
 }
