@@ -13,7 +13,7 @@ public class CameraMoveCarrier : MonoBehaviour {
 	}
 	
 	void Update () {
-//		if (cameramove)       need to be added in the end
+		if (cameramove)        // need to be added in the end
 		{
 				transform.Translate (0, 0, cameraspeed * Time.deltaTime);
 				distance++;

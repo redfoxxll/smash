@@ -27,6 +27,7 @@ public class TouchControl : MonoBehaviour {
 
 	public GUISkin mySkin;
 
+	static public bool touchable;
 	private Queue<Transform> stagecreate;
 	private Transform shootingball;
 	// Use this for initialization
@@ -35,6 +36,7 @@ public class TouchControl : MonoBehaviour {
 		shootingballmode = 1;
 		ballnumber = 100;
 		ballmodecounter = 0;
+		touchable = false;
 //		distance = 0;
 	}
 	public void detector()
@@ -43,7 +45,7 @@ public class TouchControl : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)) {
+		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)&&touchable) {
 			float forcex = (Input.mousePosition.x -  Screen.width/2)/(Screen.width/2);
 			float forcey = (Input.mousePosition.y -  Screen.height/2)/(Screen.height/2);
 
@@ -133,11 +135,14 @@ public class TouchControl : MonoBehaviour {
 		}
 	}
 
-	void OnGUI () {
-		if(mySkin) 
-			GUI.skin = mySkin;
-		GUI.color = Color.black;
-		GUI.skin.label.fontSize = 30;
-		GUI.Label(new Rect(Screen.width/2+45,50,100,100), TouchControl.ballnumber.ToString());
-	}
+//	void OnGUI () {
+////		if(mySkin) 
+////			GUI.skin = mySkin;
+//		GUI.color = Color.black;
+//		GUI.skin.label.fontSize = 30;
+//		if(TouchControl.ballnumber>=0)
+//		GUI.Label(new Rect(Screen.width/2+45,50,100,100), TouchControl.ballnumber.ToString());
+//		else
+//		GUI.Label(new Rect(Screen.width/2+45,50,100,100),"0");
+//	}
 }

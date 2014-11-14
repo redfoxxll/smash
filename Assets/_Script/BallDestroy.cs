@@ -5,7 +5,7 @@ public class BallDestroy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("DestroyDetect",5.0f,0.5f);
+		InvokeRepeating ("DestroyDetect",5.0f,0.1f);
 	}
 	void DestroyDetect()
 	{

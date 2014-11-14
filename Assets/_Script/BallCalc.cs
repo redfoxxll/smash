@@ -63,10 +63,21 @@ public class BallCalc : MonoBehaviour {
 //			balltexture[i] = (Texture2D)tmptexture.GetValue(this);
 //		}
 	}
+
 	public void BallCalcChange(int i)
 	{
 		guiTexture.texture = balltexture[i];
+	}
 
+	void OnGUI () {
+		//		if(mySkin) 
+		//			GUI.skin = mySkin;
+		GUI.color = Color.black;
+		GUI.skin.label.fontSize = 30;
+		if(TouchControl.ballnumber>=0)
+			GUI.Label(new Rect(Screen.width/2+45,50,100,100), TouchControl.ballnumber.ToString());
+		else
+			GUI.Label(new Rect(Screen.width/2+45,50,100,100),"0");
 	}
 	// Update is called once per frame
 	void Update () {

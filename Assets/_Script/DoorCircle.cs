@@ -13,9 +13,9 @@ public class DoorCircle : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other){
-		transform.GetComponent<BoxCollider> ().enabled = false;
+		transform.GetComponent<MeshCollider> ().enabled = false;
 	}
 	void OnTriggerExit(Collider other){
-		transform.GetComponent<BoxCollider> ().enabled = true;
+		transform.GetComponent<MeshCollider> ().enabled = true;
 	}
 }
