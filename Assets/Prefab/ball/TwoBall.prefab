@@ -28,7 +28,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
-  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: TwoBall
   m_TagString: Untagged
@@ -186,28 +185,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232de89e8f5504a80ade0696c55237d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c232f2c84d3046e2bb520683128d70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shattered: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232de89e8f5504a80ade0696c55237d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shattered: {fileID: 0}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c232f2c84d3046e2bb520683128d70f, type: 3}

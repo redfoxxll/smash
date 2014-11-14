@@ -5,10 +5,11 @@ public class BallDestroy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("DestroyBall",5.0f,0.5f);
+		InvokeRepeating ("DestroyDetect",5.0f,0.5f);
 	}
-	void DestroyBall()
+	void DestroyDetect()
 	{
-		GameObject.Destroy (transform.gameObject);
+		if(transform.position.z < Camera.main.transform.position.z)
+			GameObject.Destroy (transform.gameObject);
 	}
 }
