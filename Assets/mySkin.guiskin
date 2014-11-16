@@ -58,7 +58,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 1
@@ -117,7 +117,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 4
@@ -176,7 +176,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: -4
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: -2
       m_Bottom: -3
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
       m_Right: -1
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
@@ -589,7 +589,7 @@ MonoBehaviour:
       m_Right: -3
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: c2c224111079ecc4f95120aa70f1d608, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0

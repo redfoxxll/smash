@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a36145028168c4ba1e9030c36e95ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySkin: {fileID: 11400000, guid: 290fe1fd1a61b5141a7bb7732d7c095f, type: 2}
   balltexture:
   - {fileID: 2800000, guid: f4531c09c1aa04532a136d257f12dde8, type: 3}
   - {fileID: 2800000, guid: 9dac7825a0b6d4e798ed278283418231, type: 3}

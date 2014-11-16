@@ -16,11 +16,11 @@ public class BarShatter : MonoBehaviour {
 		//		if (collision.transform.gameObject.layer == 8) 
 
 			transform.rigidbody.useGravity = true;
-		//    foreach (Transform child in transform) {
-		//				rigidbody.useGravity = true;
+		    foreach (Transform child in transform) {
+						rigidbody.useGravity = true;
 						rigidbody.AddForce (new Vector3 (0, -30, 0), ForceMode.VelocityChange);
 						Debug.Log ("with ball");
-		//		}
+				}
 
 	}
 }

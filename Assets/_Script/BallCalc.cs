@@ -46,6 +46,8 @@ public class BallCalc : MonoBehaviour {
 //	public Texture2D ball39;
 //	public Texture2D ball40;
 
+	public GUISkin mySkin;
+
 	public Texture2D[] balltexture;
 //	public Texture2D ball1_2;
 //	public Texture2D ball1_3;
@@ -70,10 +72,10 @@ public class BallCalc : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		//		if(mySkin) 
-		//			GUI.skin = mySkin;
-		GUI.color = Color.black;
-		GUI.skin.label.fontSize = 30;
+				if(mySkin) 
+					GUI.skin = mySkin;
+	//	GUI.color = Color.black;
+	//	GUI.skin.label.fontSize = 30;
 		if(TouchControl.ballnumber>=0)
 			GUI.Label(new Rect(Screen.width/2+45,50,100,100), TouchControl.ballnumber.ToString());
 		else
