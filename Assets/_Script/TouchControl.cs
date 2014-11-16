@@ -27,6 +27,8 @@ public class TouchControl : MonoBehaviour {
 
 	public GUISkin mySkin;
 
+	Animator anim; 
+
 	static public bool touchable;
 	private Queue<Transform> stagecreate;
 	private Transform shootingball;
@@ -34,7 +36,7 @@ public class TouchControl : MonoBehaviour {
 	void Start () {
 		stagecreate = new Queue<Transform> ();
 		shootingballmode = 1;
-		ballnumber = 100;
+		ballnumber = 25;
 		ballmodecounter = 0;
 		touchable = false;
 //		distance = 0;
@@ -45,7 +47,7 @@ public class TouchControl : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)&&touchable) {
+		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)/*&&touchable*/) {
 			float forcex = (Input.mousePosition.x -  Screen.width/2)/(Screen.width/2);
 			float forcey = (Input.mousePosition.y -  Screen.height/2)/(Screen.height/2);
 
@@ -129,6 +131,8 @@ public class TouchControl : MonoBehaviour {
 
 			if(--TouchControl.ballnumber <= 0)
 			{
+				ballnumber = 0;
+				anim.SetTrigger ("GameOver");
 				//TODO:game over
 				Debug.Log("game over");
 			}

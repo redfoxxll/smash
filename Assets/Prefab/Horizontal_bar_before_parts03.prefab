@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665b8c298f2cf453cb7494567b707877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aftercollison: {fileID: 400064, guid: 202ccac0512785c478cac708341a1f3b, type: 2}
+  aftercollison: {fileID: 400020, guid: 963894d5394dce7419d4ed4cbbc0e681, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
