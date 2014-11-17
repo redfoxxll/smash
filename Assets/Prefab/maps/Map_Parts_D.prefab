@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 65: {fileID: 6500000}
-  - 54: {fileID: 5400004}
   m_Layer: 0
   m_Name: Left_wall_A
   m_TagString: Untagged
@@ -48,7 +47,6 @@ GameObject:
   - 33: {fileID: 3300004}
   - 23: {fileID: 2300004}
   - 65: {fileID: 6500002}
-  - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: Right_wall_A
   m_TagString: Untagged
@@ -562,7 +560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1212,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2a0cf4a09e373d4429cbb0e45b4abe01, type: 2}
+  - {fileID: 2100000, guid: 0a58941bbd115a7011005aba44295342, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1534,7 +1532,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 2a0cf4a09e373d4429cbb0e45b4abe01, type: 2}
+  - {fileID: 2100000, guid: 0a58941bbd115a7011005aba44295342, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1798,42 +1796,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100066}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!54 &5400002
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!54 &5400004
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -2144,7 +2112,7 @@ Animator:
   m_GameObject: {fileID: 100034}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fafe2066e4e28da4bbd814c7ba9eb704, type: 3}
-  m_Controller: {fileID: 9100000, guid: 37b1ce92949e54354ac1040953487bb6, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2159,7 +2127,7 @@ Animator:
   m_GameObject: {fileID: 100064}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e049e9d058db49a0aef4796464008e0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2b9767a613d024f5b94301f7beff3c99, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2193,7 +2161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aftercollison: {fileID: 400012, guid: 9251d07de25ec1b41b3dcad3b32050c9, type: 2}
   number: {fileID: 400000, guid: aafb686e73b6c4be290ff62aa25dc125, type: 2}
-  mySkin: {fileID: 0}
+  mySkin: {fileID: 11400000, guid: 290fe1fd1a61b5141a7bb7732d7c095f, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2207,7 +2175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aftercollison: {fileID: 400012, guid: 9251d07de25ec1b41b3dcad3b32050c9, type: 2}
   number: {fileID: 400000, guid: aafb686e73b6c4be290ff62aa25dc125, type: 2}
-  mySkin: {fileID: 0}
+  mySkin: {fileID: 11400000, guid: 290fe1fd1a61b5141a7bb7732d7c095f, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
