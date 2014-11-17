@@ -77,9 +77,9 @@ public class BallCalc : MonoBehaviour {
 	//	GUI.color = Color.black;
 	//	GUI.skin.label.fontSize = 30;
 		if(TouchControl.ballnumber>=0)
-			GUI.Label(new Rect(Screen.width/2+20,35,100,100), TouchControl.ballnumber.ToString());
+			GUI.Label(new Rect(Screen.width/2+20,20,100,100), TouchControl.ballnumber.ToString());
 		else
-			GUI.Label(new Rect(Screen.width/2+20,35,100,100),"0");
+			GUI.Label(new Rect(Screen.width/2+20,20,100,100),"0");
 	}
 	// Update is called once per frame
 	void Update () {

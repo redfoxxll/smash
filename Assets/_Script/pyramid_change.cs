@@ -57,7 +57,7 @@ public class pyramid_change : MonoBehaviour {
 		if (pyramid_change.checkit){
 	//		GUI.color = Color.black;
 	//		            GUI.skin.label.fontSize = 30;
-						GUI.Label(new Rect(Screen.width/2+60,30,100,100),"+3");
+						GUI.Label(new Rect(Screen.width/2+60,15,100,100),"+3");
 						InvokeRepeating("numberdisappear",1.0f,1.0f);
 		}
 	}
