@@ -331,12 +331,12 @@ AnimationClip:
         value: {x: .121290207, y: -.0900000036, z: 9.19999981}
         inSlope: {x: 0, y: 0, z: -9.19999981}
         outSlope: {x: 0, y: 0, z: -9.19999981}
-        tangentMode: 705246080
+        tangentMode: 2139095040
       - time: 1.33333337
         value: {x: .121290207, y: -.0900000036, z: 0}
         inSlope: {x: 0, y: 0, z: -9.19999981}
         outSlope: {x: 0, y: 0, z: -9.19999981}
-        tangentMode: 20836
+        tangentMode: 694031788
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: smash-hit-banner
@@ -347,36 +347,17 @@ AnimationClip:
         value: {x: 13, y: 30, z: -41}
         inSlope: {x: -13, y: -18.5, z: 21}
         outSlope: {x: -13, y: -18.5, z: 21}
-        tangentMode: 12
+        tangentMode: -625064
       - time: 1.33333337
         value: {x: 0, y: 11.5, z: -20}
         inSlope: {x: -13, y: -18.5, z: 21}
         outSlope: {x: -13, y: -18.5, z: 21}
-        tangentMode: 1852795252
+        tangentMode: 704983444
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: 
   m_ScaleCurves: []
   m_FloatCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: .333333343
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      - time: 1.33333337
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: smash-hit-banner
-    classID: 1
-    script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -517,12 +498,6 @@ AnimationClip:
       classID: 4
       customType: 0
       isPPtrCurve: 0
-    - path: 3141562475
-      attribute: 2086281974
-      script: {fileID: 0}
-      classID: 1
-      customType: 0
-      isPPtrCurve: 0
     - path: 0
       attribute: 3138646591
       script: {fileID: 0}
@@ -578,25 +553,6 @@ AnimationClip:
     m_HeightFromFeet: 0
     m_Mirror: 0
   m_EditorCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: .333333343
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      - time: 1.33333337
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 31
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_IsActive
-    path: smash-hit-banner
-    classID: 1
-    script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:

@@ -2,25 +2,12 @@
 using System.Collections;
 
 public class BarShatter : MonoBehaviour {
-
-	void Start () {
-//		InvokeRepeating ("Destroy",5.0f,0.5f);
-	}
-	void Destroy()
-	{
-//		GameObject.Destroy (transform.gameObject);
-	}
-	
 	void OnCollisionEnter(Collision collision)
 	{
-		//		if (collision.transform.gameObject.layer == 8) 
-
-			transform.rigidbody.useGravity = true;
+//			transform.rigidbody.useGravity = true;
 		    foreach (Transform child in transform) {
-						rigidbody.useGravity = true;
-						rigidbody.AddForce (new Vector3 (0, -30, 0), ForceMode.VelocityChange);
-						Debug.Log ("with ball");
-				}
-
+			child.rigidbody.useGravity = true;
+			child.rigidbody.AddForce (new Vector3 (0, 0, 2), ForceMode.VelocityChange);
+			}
 	}
 }

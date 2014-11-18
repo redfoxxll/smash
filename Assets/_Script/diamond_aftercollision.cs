@@ -14,10 +14,8 @@ public class diamond_aftercollision : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision collision)
 	{
-//		if (collision.transform.gameObject.layer == 8) 
-		{
-						transform.rigidbody.useGravity = true;
-						rigidbody.AddForce (new Vector3 (0, 0, 1), ForceMode.VelocityChange);
-		}
+		transform.rigidbody.useGravity = true;
+		rigidbody.AddForce (new Vector3 (0, 0, 1), ForceMode.VelocityChange);
+	
 	}
 }

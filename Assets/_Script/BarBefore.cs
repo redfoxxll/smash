@@ -13,11 +13,4 @@ public class BarBefore : MonoBehaviour {
 		//		gameObject.SetActive (false);
 		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);
 	}
-
-//	void OnCollisionEnter(Collision collision)
-//	{
-//		GameObject.Destroy(transform.parent.gameObject);
-//		//		gameObject.SetActive (false);
-//		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);
-//	}
 }

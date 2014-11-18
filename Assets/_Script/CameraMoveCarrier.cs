@@ -14,7 +14,6 @@ public class CameraMoveCarrier : MonoBehaviour {
 		cameramove = false;
 		cameraoutcontrol = false;
 	}
-	
 	void Update () {
 		if (!TouchControl.gameover) {
 				if (cameramove) {        // need to be added in the end
@@ -32,7 +31,6 @@ public class CameraMoveCarrier : MonoBehaviour {
 				cameraoutcontrol = true;
 				transform.FindChild("Main Camera").GetComponent<Animator>().SetTrigger("cameraoutscene");
 			}
-
 		}
 	}
 }

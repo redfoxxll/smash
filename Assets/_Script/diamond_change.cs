@@ -37,12 +37,9 @@ public class diamond_change : MonoBehaviour {
 
 		//TODO:update UI counter
 
-		Debug.Log ("the total ball num is"+TouchControl.ballnumber);
 		GameObject.Destroy(transform.parent.gameObject);
 		Instantiate (aftercollison,transform.parent.position,transform.parent.rotation);
 		Instantiate (number,transform.position+new Vector3(0,1.5f,-1.5f),number.rotation);
 	}
-	void Update () {
-	
-	}
+
 }

@@ -27,12 +27,12 @@ public class CameraMove : MonoBehaviour {
 		TouchControl.ballmodecounter = 0;
 		TouchControl.shootingballmode = 1;
 		GameObject.Find ("BallCalc").GetComponent<BallCalc>().BallCalcChange(0);
+
 		if (TouchControl.ballnumber <= 0) 
 		{
-			//TODO:UI counter set to 0 game over
-			//TODO:camera slow down speed to 0
-			Debug.Log("game over");		
+			TouchControl.gameover = true;
 		}
+
 		transform.parent.gameObject.GetComponent<Animator> ().SetTrigger ("shake");
 		Transform crashballtmp = (Transform)Instantiate (crashball,transform.position,transform.rotation);
 		foreach (Transform ballchild in crashballtmp) 
@@ -40,6 +40,12 @@ public class CameraMove : MonoBehaviour {
 			ballchild.rigidbody.AddForce(new Vector3(0,0,10),ForceMode.VelocityChange);		
 		}
 		Invoke ("SetMovable", 2.0f);
+	}
+	void OnTriggerExit(Collider other)
+	{
+		if (other.tag == "gateblock") {
+			GameObject.Destroy (GameObject.Find("Stage1"));
+				}
 	}
 	void SetMovable()
 	{

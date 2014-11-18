@@ -26,7 +26,6 @@ public class pyramid_change : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		//logic for the ball count
-//		BallCalc.BallCalcChange ();
 		pyramid_change.checkit = true;
 		TouchControl.ballnumber += 3;
 		if (TouchControl.shootingballmode < 5) {
