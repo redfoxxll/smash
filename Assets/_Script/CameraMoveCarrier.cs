@@ -23,9 +23,9 @@ public class CameraMoveCarrier : MonoBehaviour {
 			} else {
 			cameraspeed *= 0.999f;
 
-			if(cameraspeed * Time.deltaTime >=0.1f )
+			if(cameraspeed * Time.deltaTime >=0.05f )
 			transform.Translate (0, 0, cameraspeed * Time.deltaTime);
-			else if(cameraspeed * Time.deltaTime < 0.1f&&!cameraoutcontrol)
+			else if(cameraspeed * Time.deltaTime < 0.05f&&!cameraoutcontrol)
 			{
 				transform.Translate (0, 0, 0);
 				cameraoutcontrol = true;
