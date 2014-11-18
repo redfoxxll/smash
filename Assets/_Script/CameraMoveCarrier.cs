@@ -21,7 +21,7 @@ public class CameraMoveCarrier : MonoBehaviour {
 						distance++;
 				}
 			} else {
-			cameraspeed *= 0.999f;
+			cameraspeed *= 0.9f;
 
 			if(cameraspeed * Time.deltaTime >=0.05f )
 			transform.Translate (0, 0, cameraspeed * Time.deltaTime);
