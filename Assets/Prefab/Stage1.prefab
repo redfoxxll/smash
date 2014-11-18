@@ -1818,9 +1818,10 @@ GameObject:
   - 65: {fileID: 6500138}
   - 65: {fileID: 6500136}
   - 65: {fileID: 6500134}
+  - 65: {fileID: 6500026}
   m_Layer: 0
   m_Name: Gate_Block
-  m_TagString: Untagged
+  m_TagString: gateblock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3163,7 +3164,7 @@ Transform:
   m_GameObject: {fileID: 100044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.52587891e-05, y: 4.5, z: 8.21814156}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 5, z: 1}
   m_Children:
   - {fileID: 400028}
   m_Father: {fileID: 400000}
@@ -9668,6 +9669,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6500026
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 2, z: .230000004}
+  m_Center: {x: -1.8189894e-12, y: 1.35000002, z: -1.04999995}
 --- !u!65 &6500028
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -10821,7 +10834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665b8c298f2cf453cb7494567b707877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aftercollison: {fileID: 400058, guid: b1e122af8a9bc4c58ab0793971b0b82b, type: 2}
+  aftercollison: {fileID: 400058, guid: 43676ab0c0132419d80c74860cfab035, type: 2}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
