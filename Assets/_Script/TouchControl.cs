@@ -15,6 +15,7 @@ public class TouchControl : MonoBehaviour {
 	public static int shootingballmode;
 	public static int ballnumber;
 	public static int ballmodecounter;
+	public static bool gameover;
 //	public static int distance;
 
 	public float horizonforce;
@@ -27,7 +28,7 @@ public class TouchControl : MonoBehaviour {
 
 	public GUISkin mySkin;
 
-	Animator anim; 
+//	Animator anim; 
 
 	static public bool touchable;
 	private Queue<Transform> stagecreate;
@@ -39,6 +40,7 @@ public class TouchControl : MonoBehaviour {
 		ballnumber = 25;
 		ballmodecounter = 0;
 		touchable = false;
+		gameover = false;
 //		distance = 0;
 	}
 	public void detector()
@@ -47,7 +49,7 @@ public class TouchControl : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)/*&&touchable*/) {
+		if (Input.GetMouseButtonDown (0)&&(TouchControl.ballnumber > 0)&&touchable) {
 			float forcex = (Input.mousePosition.x -  Screen.width/2)/(Screen.width/2);
 			float forcey = (Input.mousePosition.y -  Screen.height/2)/(Screen.height/2);
 
@@ -132,9 +134,10 @@ public class TouchControl : MonoBehaviour {
 			if(--TouchControl.ballnumber <= 0)
 			{
 				ballnumber = 0;
-				anim.SetTrigger ("GameOver");
+//				anim.SetTrigger ("GameOver");
 				//TODO:game over
 				Debug.Log("game over");
+				gameover = true;
 			}
 		}
 	}

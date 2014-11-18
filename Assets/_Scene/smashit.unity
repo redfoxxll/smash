@@ -20,7 +20,7 @@ RenderSettings:
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .338235319, g: .338235319, b: .338235319, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 136c7b5fad3d84531aa745bc687b9034, type: 2}
-  m_HaloStrength: .5
+  m_HaloStrength: .709999979
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -6079,7 +6079,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ee2a39e0a0aad43af97319d3db8dbfc6, type: 2}
   m_PrefabInternal: {fileID: 1279398184}
   m_GameObject: {fileID: 746261512}
-  m_LocalRotation: {x: -.707106888, y: .707106769, z: -3.4560702e-07, w: 3.45606963e-07}
+  m_LocalRotation: {x: -.707106829, y: .707106709, z: -3.45606992e-07, w: 3.45606935e-07}
   m_LocalPosition: {x: 1.18442082, y: 1.17388856, z: -.218181238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6551,7 +6551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &781882419
 Light:
   m_ObjectHideFlags: 0
@@ -10348,7 +10348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1173666686
 Light:
   m_ObjectHideFlags: 0
@@ -11710,7 +11710,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: ee2a39e0a0aad43af97319d3db8dbfc6, type: 2}
   m_PrefabInternal: {fileID: 1279398184}
   m_GameObject: {fileID: 1419858457}
-  m_LocalRotation: {x: 2.30404666e-07, y: 2.30404638e-07, z: -.707106888, w: -.707106769}
+  m_LocalRotation: {x: 2.30404652e-07, y: 2.30404623e-07, z: -.707106829, w: -.707106709}
   m_LocalPosition: {x: 1.18442082, y: 1.17388856, z: -.218181238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -11731,7 +11731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1421144368
 Light:
   m_ObjectHideFlags: 0
@@ -16233,7 +16233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1911954330
 Light:
   m_ObjectHideFlags: 0

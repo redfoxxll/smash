@@ -14,6 +14,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: cameraoutscene
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -26,6 +32,26 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1101 &110100000
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110275482}
+  m_DstState: {fileID: 110200000}
+  m_TransitionDuration: .1875
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: cameraoutscene
+    m_EventTreshold: 0
+    m_ExitTime: .8125
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110115269
 Transition:
   serializedVersion: 2
@@ -66,6 +92,21 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1102 &110200000
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: cameraoutscene
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: ef4b26c5a254046a2a8805b6c463ee40, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 348, y: 24, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110241710
 State:
   m_ObjectHideFlags: 3
@@ -122,37 +163,24 @@ StateMachine:
   m_States:
   - {fileID: 110275482}
   - {fileID: 110299247}
+  - {fileID: 110200000}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
+    data:
+      first: {fileID: 110200000}
+      second: []
+    data:
+      first: {fileID: 0}
+      second: []
     data:
       first: {fileID: 110299247}
       second:
       - {fileID: 110115269}
     data:
-      first: {fileID: 0}
-      second: []
-    data:
       first: {fileID: 110275482}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 0}
-      second: []
+      second:
+      - {fileID: 110100000}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 108, y: 24, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
