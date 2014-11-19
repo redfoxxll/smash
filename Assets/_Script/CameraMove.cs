@@ -2,16 +2,27 @@
 using System.Collections;
 
 public class CameraMove : MonoBehaviour {
-	public Transform crashball;
 
+	public Transform crashball;
 	public float cameraspeed;
 	private bool movable;
+
 	void Start () {
 		movable = true;
 	}
 	void Update () {
-		if (Input.GetMouseButtonDown (0)&&!TouchControl.touchable) 
-			transform.GetComponent<Animator>().SetTrigger("cameraenterscene");
+		if (Input.GetMouseButtonDown (0) && !TouchControl.touchable) 
+		{
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition); 
+			RaycastHit hit = new RaycastHit ();
+			if (Physics.Raycast (ray, out hit)) {
+				if (hit.collider.tag == "StartButton")
+				{
+					GameObject.Destroy(hit.collider.gameObject);
+					transform.GetComponent<Animator> ().SetTrigger ("cameraenterscene");
+				}
+			}
+		}
 	}
 	public void SetMove(){
 		transform.parent.GetComponent<CameraMoveCarrier>().cameramove = true;
