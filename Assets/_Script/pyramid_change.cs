@@ -8,8 +8,11 @@ public class pyramid_change : MonoBehaviour {
 
 	public static bool checkit;
 
+	private bool ballock;
+
 	void Start () {
 		InvokeRepeating ("checkpos",0.5f,0.5f);
+		ballock = false;
 	}
 
 	void checkpos()
@@ -25,6 +28,10 @@ public class pyramid_change : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
+		if (ballock)
+			return;
+
+		ballock = true;
 		//logic for the ball count
 		pyramid_change.checkit = true;
 		TouchControl.ballnumber += 3;
@@ -54,10 +61,8 @@ public class pyramid_change : MonoBehaviour {
 		if(mySkin) 
 			GUI.skin = mySkin;
 		if (pyramid_change.checkit){
-	//		GUI.color = Color.black;
-	//		            GUI.skin.label.fontSize = 30;
-						GUI.Label(new Rect(Screen.width/2+60,15,100,100),"+3");
-						InvokeRepeating("numberdisappear",1.0f,1.0f);
+				GUI.Label(new Rect(Screen.width/2+60,15,100,100),"+3");
+				InvokeRepeating("numberdisappear",1.0f,1.0f);
 		}
 	}
 	void numberdisappear(){
